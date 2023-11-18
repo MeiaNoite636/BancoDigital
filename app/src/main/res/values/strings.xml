@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">Banco Digital</string>
+
+
+    <!-- Generic -->
+    <string name="text_name_empty">Digite seu nome</string>
+    <string name="text_email_empty">Digite seu e-mail</string>
+    <string name="text_phone_empty">Digite seu telefone</string>
+    <string name="text_password_empty">Digite sua senha</string>
+    <string name="error_generic">Ocorreu um erro, por favor tente novamente mais tarde</string>
+    <string name="text_formated_value">R$ %1$s</string>
+
+
+    <!-- BottomSheet -->
+    <string name="text_title_bottom_sheet">Atenção</string>
+    <string name="text_buttom_bottom_sheet">Entendi</string>
+
+
+    <!--    LoginFragment-->
+    <string name="text_hint_email_login_fragment">E-mail</string>
+    <string name="text_hint_password_login_fragment">Password</string>
+    <string name="text_button_login_fragment">Login</string>
+    <string name="text_create_account_login_fragment">Create Account</string>
+    <string name="text_recover_account_login_fragment">Recover Account</string>
+
+
+    <!--    RecoverFragment-->
+    <string name="text_toolbar_recover_fragment">Recuperar Conta</string>
+    <string name="text_description_recover_fragment">Digite seu e-mail que te enviaremos
+        um link para você alterar sua senha</string>
+    <string name="text_email_recover_fragment">E-mail</string>
+    <string name="text_hint_email_recover_fragment">Digite seu e-mail</string>
+    <string name="text_buttom_recover_fragment">Enviar</string>
+    <string name="text_send_email_success_recover_fragment">E-mail enviado com sucesso</string>
+
+
+    <!--    RegisterFragment-->
+    <string name="text_toolbar_register_fragment">Criar Conta</string>
+    <string name="text_name_register_fragment">Nome</string>
+    <string name="text_hint_name_register_fragment">Digite seu nome</string>
+    <string name="text_email_register_fragment">E-mail</string>
+    <string name="text_hint_email_register_fragment">Digite seu e-mail</string>
+    <string name="text_phone_register_fragment">Telefone</string>
+    <string name="text_hint_phone_register_fragment">Digite seu telefone</string>
+    <string name="text_password_register_fragment">Senha</string>
+    <string name="text_hint_password_register_fragment">Digite sua senha</string>
+    <string name="text_button_registered_register_fragment">Cadastrar</string>
+
+
+    <!--    ProfileFragment-->
+    <string name="text_toolbar_profile_fragment">Perfil</string>
+    <string name="text_name_profile_fragment">Nome</string>
+    <string name="text_hint_name_profile_fragment">Digite seu nome</string>
+    <string name="text_email_profile_fragment">E-mail</string>
+    <string name="text_hint_email_profile_fragment">Digite seu e-mail</string>
+    <string name="text_phone_profile_fragment">Telefone</string>
+    <string name="text_hint_phone_profile_fragment">Digite seu telefone</string>
+    <string name="text_button_registered_profile_fragment">Salvar</string>
+    <string name="text_message_save_sucess_profile_fragment">Alterações do perfil salvas com sucesso</string>
+
+    <string name="text_message_camera_denied_profile_fragment">Para que você capture imagens utilizando a câmera precisaremos da permissão. Acesse as configurações da permissão e habilite-as</string>
+    <string name="text_message_gallery_denied_profile_fragment">Para usar imagens da galeria precisaremos da sua permissão. Acesse as configurações da permissão e habilite-as</string>
+
+    <string name="text_title_bottom_sheet_profile">Adicionar imagem do perfil</string>
+    <string name="text_message_bottom_sheet_profile">Escolha uma das opções abaixo para adicionar uma imagem</string>
+    <string name="text_button_camera_bottom_sheet_profile">Câmera</string>
+    <string name="text_button_gallery_bottom_sheet_profile">Galeria</string>
+
+
+    <!-- Extract Fragment -->
+    <string name="text_title_extract_fragment">Extrato</string>
+    <string name="text_message_extract_fragment">Não há nenhuma transação para listar</string>
+
+
+    <!--    Error Firebase Auth-->
+    <string name="account_not_registered_register_fragment">Nenhuma conta encontrada com este e-mail.</string>
+    <string name="invalid_email_register_fragment">Insira uma e-mail válido</string>
+    <string name="invalid_password_register_fragment">Senha inválida, tente novamente</string>
+    <string name="email_in_use_register_fragment">Este e-mail já está em uso</string>
+    <string name="strong_password_register_fragment">Insira uma senha mais forte</string>
+
+
+    <!--    Home Fragment-->
+    <string name="text_message_empty_transaction_home_fragment">Nenhuma transação efetuada</string>
+
+
+    <!--    DepositFormFragment-->
+    <string name="text_title_toolbar_deposit_form_fragment">Depositar</string>
+    <string name="text_title_deposit_form_fragment">Informe o valor a ser depositado</string>
+    <string name="text_value_deposit_form_fragment">R$ 0,00</string>
+
+    <!--    DepositReceiptFragment-->
+    <string name="text_title_toolbar_recharge_receipt_fragment">Recibo</string>
+    <string name="text_title_recharge_fragment">Recarga efetuada\n com sucesso</string>
+    <string name="text_sub_title_recharge_fragment">Seu crédito estará disponível em alguns minutos</string>
+    <string name="text_code_transaction_recharge_fragment">Código Transação</string>
+    <string name="text_date_transaction_recharge_fragment">Data recarga</string>
+    <string name="text_amount_transaction_recharge_fragment">Valor recarga</string>
+    <string name="text_amount_phone_recharge_fragment">Valor recarga</string>
+    <string name="text_btn_transaction_recharge_fragment">Número</string>
+
+
+    <!--    RechargeReceiptFragment-->
+    <string name="text_title_deposit_receipt_fragment">Recibo</string>
+    <string name="text_title_deposit_fragment">Depósito efetuado\n com sucesso</string>
+    <string name="text_sub_title_deposit_fragment">Seu depósito ficará disponível em até 3 dias úteis</string>
+    <string name="text_code_transaction_deposit_fragment">Código Transação</string>
+    <string name="text_date_transaction_deposit_fragment">Data depósito</string>
+    <string name="text_amount_transaction_deposit_fragment">Valor depósito</string>
+    <string name="text_btn_transaction_deposit_fragment">Continuar</string>
+
+
+    <!--    RechargeFormFragment-->
+    <string name="text_title_recharge_form_fragment">Recarga</string>
+    <string name="text_title_recharge_form_amount_fragment">Valor da recarga</string>
+    <string name="text_value_recharge_form_amount_fragment">Insira um valor</string>
+    <string name="text_label_recharge_number_form_fragment">Insira um número</string>
+    <string name="text_number_phone_recharge_form_fragment">Número de telefone</string>
+    <string name="text_button_recharge_form_fragment">Confirmar</string>
+
+
+    <!--   ExtractFragment -->
+    <string name="text_title_toolbar_extract_fragment">Extrato</string>
+
+    <!--    FragmentTransferUserListFragment-->
+    <string name="text_title_toolbar_fragment_transfer_user_list">Usuários</string>
+
+    <!--    TransferFormFragment-->
+    <string name="text_title_toolbar_fragment_transfer_form">Transferência</string>
+    <string name="text_title_fragment_transfer_form">Informe o valor a ser transferido</string>
+    <string name="text_value_fragment_transfer_form">R$ 0,00</string>
+    <string name="text_message_empty_amount_fragment_transfer_form">Informe o valor a ser transferido</string>
+
+    <!--    ConfirmTransferFragment-->
+    <string name="text_title_toolbar_fragment_confirm_transfer_fragment">Transferência</string>
+    <string name="text_message_fragment_confirm_transfer_fragment">Verifique os dados antes de confirmar a transferência</string>
+    <string name="text_message_not_reversed_confirm_transfer_fragment">Após confirmar a transferência \n não será possível desfazê-la.</string>
+    <string name="text_message_receipt_confirm_transfer_fragment">Receberá a transferência</string>
+    <string name="text_message_value_confirm_transfer_fragment">Valor Transferência:</string>
+    <string name="text_message_button_confirm_transfer_fragment">Confirmar</string>
+    <string name="text_message_insuficient_balance_confirm_transfer_fragment">Saldo insuficiente</string>
+
+
+    <!--    ReceiptTransferFragment-->
+    <string name="text_title_toolbar_receipt_transfer_fragment">Recibo</string>
+    <string name="text_message_receipt_transfer_fragment">Transferência efetuada com sucesso</string>
+    <string name="text_message_time_receipt_transfer_fragment">Transferência realizada com sucesso. A previsão de crédito na conta é de até 30 minutos.</string>
+    <string name="text_message_date_receipt_transfer_fragment">Data Transferência</string>
+    <string name="text_message_value_receipt_transfer_fragment">Valor Transferência</string>
+    <string name="text_message_sent_receipt_transfer_fragment">Receberá a transferência:</string>
+    <string name="text_message_received_receipt_transfer_fragment">Recebeu transferência de:</string>
+    <string name="text_message_code_transaction_receipt_transfer_fragment">Código da Transação:</string>
+    <string name="text_btn_continue_receipt_transfer_fragment">Continuar</string>
+
+    <!--    TransferUserListFragment-->
+    <string name="text_message_transfer_user_list_fragment">Nenhum usuário encontrado</string>
+
+</resources>

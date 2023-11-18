@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".presenter.auth.register.RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/color_default"
+                    android:text="@string/text_toolbar_register_fragment">
+
+                </TextView>
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="16dp">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_name_register_fragment"
+                android:textColor="@color/color_default"
+                android:textColorHint="@color/color_text_hint">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                style="@style/Theme.EditText"
+                android:drawableStart="@drawable/ic_user_line"
+                android:drawablePadding="8dp"
+                android:hint="@string/text_hint_name_register_fragment">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/text_email_register_fragment"
+                android:textColor="@color/color_default"
+                android:textColorHint="@color/color_text_hint">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Theme.EditText"
+                android:layout_marginTop="4dp"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/ic_mail_line"
+                android:drawablePadding="8dp"
+                android:hint="@string/text_hint_email_register_fragment">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/text_phone_register_fragment"
+                android:textColor="@color/color_default"
+                android:textColorHint="@color/color_text_hint">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                style="@style/Theme.EditText"
+                android:drawableStart="@drawable/ic_phone_line"
+                android:drawablePadding="8dp"
+                android:hint="@string/text_hint_phone_register_fragment">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/text_password_register_fragment"
+                android:textColor="@color/color_default"
+                android:textColorHint="@color/color_text_hint">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Theme.EditText"
+                android:layout_marginTop="4dp"
+                android:drawableStart="@drawable/ic_password_line"
+                android:drawablePadding="8dp"
+                android:inputType="textPassword"
+                android:hint="@string/text_hint_password_register_fragment">
+
+            </EditText>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_btn"
+                android:text="@string/text_button_registered_register_fragment"
+                android:textAllCaps="false"
+                app:backgroundTint="@null">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:visibility="invisible"
+                tools:visibility="visible"
+                android:indeterminateTint="@color/color_default">
+
+            </ProgressBar>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

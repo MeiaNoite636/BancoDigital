@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.bancodigital.presenter.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+    <navigation android:id="@+id/authentication"
+        app:startDestination="@id/loginFragment">
+        <fragment
+            android:id="@+id/loginFragment"
+            android:name="com.example.bancodigital.presenter.auth.login.LoginFragment"
+            android:label="fragment_login"
+            tools:layout="@layout/fragment_login">
+            <action
+                android:id="@+id/action_loginFragment_to_recoverFragment"
+                app:destination="@id/recoverFragment" />
+            <action
+                android:id="@+id/action_loginFragment_to_registerFragment"
+                app:destination="@id/registerFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/recoverFragment"
+            android:name="com.example.bancodigital.presenter.auth.recover.RecoverFragment"
+            android:label="fragment_recover"
+            tools:layout="@layout/fragment_recover" />
+        <fragment
+            android:id="@+id/registerFragment"
+            android:name="com.example.bancodigital.presenter.auth.register.RegisterFragment"
+            android:label="fragment_register"
+            tools:layout="@layout/fragment_register" />
+    </navigation>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.bancodigital.presenter.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_depositFormFragment"
+            app:destination="@id/depositFormFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_extractFragment"
+            app:destination="@id/extractFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_rechargeFormFragment"
+            app:destination="@id/rechargeFormFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_transferUserListFragment"
+            app:destination="@id/transferUserListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/depositFormFragment"
+        android:name="com.example.bancodigital.presenter.features.deposit.DepositFormFragment"
+        android:label="fragment_deposit_form"
+        tools:layout="@layout/fragment_deposit_form" />
+    <fragment
+        android:id="@+id/depositReceiptFragment"
+        android:name="com.example.bancodigital.presenter.features.deposit.DepositReceiptFragment"
+        android:label="fragment_deposit_receipt"
+        tools:layout="@layout/fragment_deposit_receipt" >
+        <argument
+            android:name="idDeposit"
+            app:argType="string" />
+        <argument
+            android:name="homeAsUpEnabled"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/extractFragment"
+        android:name="com.example.bancodigital.presenter.features.extract.ExtractFragment"
+        android:label="fragment_extract"
+        tools:layout="@layout/fragment_extract" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.bancodigital.presenter.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/rechargeFormFragment"
+        android:name="com.example.bancodigital.presenter.features.recharge.RechargeFormFragment"
+        android:label="fragment_recharge_form"
+        tools:layout="@layout/fragment_recharge_form" />
+    <fragment
+        android:id="@+id/rechargeReceiptFragment"
+        android:name="com.example.bancodigital.presenter.features.recharge.RechargeReceiptFragment"
+        android:label="fragment_recharge_receipt"
+        tools:layout="@layout/fragment_recharge_receipt" >
+        <argument
+            android:name="idRecharge"
+            app:argType="string" />
+        <argument
+            android:name="homeAsUpEnabled"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/transferUserListFragment"
+        android:name="com.example.bancodigital.presenter.features.transfer.transfer_user_list.TransferUserListFragment"
+        android:label="fragment_transfer_user_list"
+        tools:layout="@layout/fragment_transfer_user_list" >
+        <action
+            android:id="@+id/action_transferUserListFragment_to_transferFormFragment"
+            app:destination="@id/transferFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transferFormFragment"
+        android:name="com.example.bancodigital.presenter.features.transfer.TransferFormFragment"
+        android:label="fragment_transfer_form"
+        tools:layout="@layout/fragment_transfer_form" >
+        <argument
+            android:name="user"
+            app:argType="com.example.bancodigital.data.model.User" />
+        <action
+            android:id="@+id/action_transferFormFragment_to_confirmTransferFragment"
+            app:destination="@id/confirmTransferFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmTransferFragment"
+        android:name="com.example.bancodigital.presenter.features.transfer.transfer_confirm.ConfirmTransferFragment"
+        android:label="fragment_transfer_confirm"
+        tools:layout="@layout/fragment_transfer_confirm" >
+        <argument
+            android:name="user"
+            app:argType="com.example.bancodigital.data.model.User" />
+        <argument
+            android:name="amount"
+            app:argType="float" />
+    </fragment>
+    <fragment
+        android:id="@+id/receiptTransferFragment"
+        android:name="com.example.bancodigital.presenter.features.transfer.receipt.ReceiptTransferFragment"
+        android:label="fragment_transfer_receipt"
+        tools:layout="@layout/fragment_transfer_receipt" >
+        <argument
+            android:name="idTransfer"
+            app:argType="string" />
+        <argument
+            android:name="homeAsUpEnabled"
+            app:argType="boolean" />
+    </fragment>
+    <action android:id="@+id/action_global_depositReceiptFragment" app:destination="@id/depositReceiptFragment" />
+    <action android:id="@+id/action_global_receiptTransferFragment" app:destination="@id/receiptTransferFragment" />
+    <action android:id="@+id/action_global_rechargeReceiptFragment" app:destination="@id/rechargeReceiptFragment" /><action android:id="@+id/action_global_authentication" app:destination="@id/authentication"/><action android:id="@+id/action_global_homeFragment" app:destination="@id/homeFragment"/>
+</navigation>
