@@ -4,3 +4,7 @@ Esse projeto tem como finalidade simular as funcionalidades de um banco tais com
 Através de um recyclerView que é exibido na tela inicial é possível visualizar as últimas 6 transações do usuário que também pode ser direcionado para tela de recibo da respectiva transação. A tela home nos dá acesso a praticamente todas as outras.
 
 Tecnologias utilizadas: Kotlin, Android Jetpack, Coroutines, Live Data, MVVM, Injeção de Dependência, Firebase, Glide
+
+<div align="center">
+<img src="https://github.com/MeiaNoite636/BancoDigital/assets/91136155/79150c09-8eb2-4318-b736-afd2e805bec8" width="300px" />
+</div>
